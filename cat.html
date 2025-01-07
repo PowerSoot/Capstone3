@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paradise Parking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="sass.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+<div class="alert alert-primary alert-dismissible" role="alert" data-bs-dismiss="alert" style="border: border-dark">
+  <span class="spinner-grow text-dark border border-top border-4 border-primary"></span>
+  <div class="container text-center text-white rounded border-4 border-dark bg-secondary">
+    <p class="border border-black bg-dark">Location is on</p>
+  </div>
+  <button class="btn-close bg-info border border-dark" data-bs-dismiss="alert"></button>
+</div>
+
+
+<script>
+  /**
+   * Displays a message to the user.
+   * @param {string} myMessage - Message to be displayed.
+   */
+  function display2(myMessage) {
+
+    //STEP: Let it display the message.
+    //PSEUDO: Display myMessage
+    document.write(myMessage);
+  }
+
+  function ask() {
+    //STEP: Let it prompt the user with "Enter your name." Store in userName.
+    //PSEUDO: userName = prompt("Enter your name.")
+    userName = prompt("Enter your zipcode.");
+
+    return userName;
+  }
+
+</script>
+<script>
+  name = ask();
+  display2("We are sorry, but " + name + " has no available spots at this time " + ". <br>");
+</script>
+
+<body class="bg-light text-center">
+  <header aria aria-label="Header">
+    <img width="100%" src="capstone2's\Images\header1_cr3.png">
+
+    <nav aria aria-label="Main navigation" class="navbar mixIt">
+      <a class="" href="index.html">Home Page</a>
+      <a class="" href="about.html">About Our Services</a>
+      <a class="" href="gallery.html">Gallery</a>
+      <a class="" href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <h2 class="text-center pt-3 text-primary">
+      <p class="border border-5 border-info bg-black p-2 text-info rounded text-center">
+      <h2 class="text-center pt-3 text-primary">
+        <h1 class="text-center text-primary pt-3">
+          NO SPOTS AVAILABLE IN YOUR LOCATION
+        </h1>
+        <div class="box py-3 boxaligncenter submissionsummarytable"><div class="table-responsive"><table class="generaltable table-bordered">
+          <tbody><tr class="">
+          <th class="cell c0" style="" scope="row">Properly explain what your website is about.</th>
+          <td class="cell c1 lastcol" style="">It is a pseudo website for a company. It is a service that helps people find parking.</td>
+          </tr>
+          <tr class="">
+          <th class="cell c0" style="" scope="row">What inspired you? What are the features?</th>
+          <td class="cell c1 lastcol" style="">Not a lot of parking services available </td>
+          </tr>
+          <tr class="">
+          <th class="cell c0" style="" scope="row">Properly explain why a company would hire you after seeing your website</th>
+          <td class="submissionnotgraded cell c1 lastcol" style="">A company would hire me because my ideas have legs.</td>
+          </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how the pages in your project are linked together with a navigation bar.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The navigation bar links to the different pages using hyperlinks and anchors.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain the correct usage of boilerplate and semantic tags in your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">A boilerplate is a template for a page. boilerplate tags for example are &lt;head&gt; &lt;title&gt; and &lt;body&gt;. A semantic tag is a tag that conveys the meaning of the content. For example, &lt;header&gt; and &lt;footer&gt; are semantic tags.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain the correct usage of radio buttons in your project</th>
+          <td class="timeremaining cell c1 lastcol" style="">The proper usage of radio buttons is to select one option from a list. Reference: "About our Services" page. Label and input tags are used.</td><td class="timeremaining cell c1 lastcol" style=""></td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain 3 types of CSS in your project. Inline CSS, internal CSS, and external CSS.</th>
+          <td class="timeremaining cell c1 lastcol" style="">Examples of Inline CSS: "Home Page- &lt;span&gt; Internal CSS example: "About Our Serives-page-&lt;style&gt; External CSS example: "Contact Us-page- Sass &lt;link&gt; </td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain the utility functions used by your project. How are they linked to HTML files? Where are they used? How do they work?</th>
+          <td class="timeremaining cell c1 lastcol" style="">The utility functions are linked to HTML files via the script tag. The functions are used on the "About Our Services" page. They work by adding the markup string returned from createCardMarkupString to the mainTag's innerHTML.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a loop works in your project. What's the starting count? What's the ending count? How does it increment? When does it stop?</th>
+          <td class="timeremaining cell c1 lastcol" style="">The starting count is 0. The ending count is 2. The count increments by 1. The loop stops when the count reaches 2.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain 5 different data types you created for your project. String, number, array, Boolean, and object.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The 5 data types are: String for text values- example on "About Our Services" page. const cards = [card1, card2, card3];create an array of objects, each object represents a card with src, title, and description properties. Number for numeric values, Array to store multiple values, Boolean for true/false values, and Object to store key-value pairs.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain 7 Bootstrap components in your project. nav, card, alert, grow spinner, badge, list group, grid system</th>
+          <td class="timeremaining cell c1 lastcol" style=""></td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how the pages in your project are linked together with a navigation bar.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The 7 Bootstrap components used in the project are: The navbar component is used to create a navigation bar on each page. The card component is used to create a card with a title, src, and description on the "About Our Services" page. The alert component is used to create a dismissible alert on the "Contact Us" page. The grow spinner component is used to create a loading animation on the "Gallery" page. The badge component is used to create a badge on the "Contact Us" page. The list group component is used to create a list group on the "Gallery" page. The grid system is used to position elements on the page in a grid-like pattern on the "About Our Services" page.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">
+            Properly explain how you created an image map for your project. At least 2 areas and 2 hyperlinks.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The img tag displays the image.
+            The usemap attribute specifies the name of the map (#map1).
+            The map tag defines the clickable areas.
+            Each area tag defines a single clickable area:
+            shape specifies the shape of the area (e.g., rect, circle, poly).
+            coords specifies the coordinates of the area (e.g., x,y,width,height for a rectangle).
+            href specifies the URL to link to when the area is clicked.
+            alt specifies the alternative text for the area.  </td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how 2 forms in your project automatically validate user input.</th>
+          <td class="timeremaining cell c1 lastcol" style="">
+            The first form automatically validates user input by using HTML5 input types and the 'required' attribute, ensuring the email field contains a valid email format. The second form uses pattern attributes to match specific input formats, such as phone numbers, providing immediate feedback to the user if the input is invalid.
+          </td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a function runs by clicking a button in your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The function runs by clicking a button in my project. The button is created with the button element and the onclick attribute is used to call the function when the button is clicked. The function is defined as a function statement and contains the code to be executed when the function is called. The function is called when the button is clicked by using the onclick attribute. The function takes in an argument, which is the event that triggered the function call. The function is defined as a function declaration and can be called multiple times. The function can also be called from other parts of the code by using the function name. The function can also be called from other parts of the code by using the function name and passing in the argument.
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how 2 forms are processed in your project. Contact form and appointment form.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The contact form and appointment form are both processed using the processForm function. This function takes an event parameter and prevents the default form submission behavior. The function retrieves the form data, displays a message indicating that the information is being processed, and creates a new Promise that resolves with a server response. When the Promise resolves, it passes the response to the parseResponse function for further processing. </td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain why preventDefault was necessary for processing the forms.</th>
+          <td class="timeremaining cell c1 lastcol" style="">preventDefault was used to prevent the browser from sending a request to the server and reload the page. Instead, it allowed the JavaScript code to process the form submission.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how the data in each form is extracted.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The data in each form is extracted by using the form elements' name attribute to access the value of the input field.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain SASS nesting syntax used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The SASS nesting syntax is used to nest CSS selectors inside parent selectors. The nesting syntax is used to create a parent-child relationship between the CSS selectors. For example, it is used in the "Contact Us" page to create a parent-child relationship between the form and its children. The nesting syntax is also used to reduce the amount of CSS code and to make it more concise.
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain SASS parent syntax used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style=""></td>
+        <tr class="">
+          <th class="cell c0" style="" scope="row">Properly explain SASS parent syntax used by your project. example button</th>
+          <td class="cell c1 lastcol" style="">The SASS parent selector (&) is used to refer to the parent selector in nested rules. For example, in the button styling, we use &:hover to define styles when the button is hovered.</td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain a SASS mixin used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">My SASS mixin, myFirstMixin, is used to create a reusable CSS rule that can be used in multiple places. It takes in 3 parameters: $color, $fontSize, and $borderWidth. It then uses these parameters to generate a CSS rule that sets the background color, font size, and border width of a selector. For example, if I call myFirstMixin with the arguments #ff0000, 24px, and 2px, it will generate the following CSS rule: .myFirstMixin { background-color: #ff0000; font-size: 24px; border-width: 2px; }.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a custom font was added to your project.</th>
+          <td class="timeremaining cell c1 lastcol" style=""></td>
+        </tr>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain SASS variables used by your project.
+          </th>
+          <td class="timeremaining cell c1 lastcol" style="">The SASS variables used in the project are color variables for the primary color and secondary color. The primary color is #b3b3b3 and the secondary color is #8d0052a8. The variables are used to set the background color of the header and the background color of the sections. The variables are defined in the sass.css file. The variables are used in the styles for the header and sections. The variables are used to create a consistent look and feel across the entire website.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain the difference between SASS and CSS.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The main difference between SASS and CSS is that SASS is a preprocessor language that extends CSS with more features and functions. SASS is compiled into CSS before it is interpreted by the browser. SASS is more powerful and flexible than CSS. SASS allows for nesting, variables, conditionals, functions, and loops. SASS is also more concise than CSS. SASS is used in the project to style the pages. For example, the colors of the navigation bar are set in the SASS file. The SASS file is compiled into CSS before it is interpreted by the browser.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain 2 branches (except main) in your project. How were they created? How were they named? What are they for? How do you switch to them.</th>
+          <td class="timeremaining cell c1 lastcol" style="">
+            The two branches created in the project are the "dev" branch and the "test" branch. The "dev" branch is used for development and the "test" branch is used for testing. The branches were created using the "git branch" command. To switch to one of the branches, the "git checkout" command is used. For example, "git checkout dev" will switch to the "dev" branch.
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how branches were merged to the main project.</th>
+          <td class="timeremaining cell c1 lastcol" style=""></td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a Promise is used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">A Promise is an object that represents the eventual completion or failure of an asynchronous operation and its resulting value. It's a way to handle asynchronous code in a more structured and manageable way.A Promise is used in the project to handle the asynchronous operation of sending a form submission to the server. It is created when the form is submitted and it resolves with a server response. The response is then passed to a callback function for further processing.
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a resolve function is used by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The resolve function is used to resolve a Promise. It takes a value as an argument and returns a new Promise that resolves with the value. The resolve function is used in the processForm function to resolve the Promise with the server response after the form data has been processed. The resolved Promise is then passed to the parseResponse function for further processing.
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a resolve value is passed to a callback function in your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The resolve value is passed to a callback function when the promise is resolved. For example, in the `getServerResponse2` function, the `resolve` callback is called with a JSON string as the resolve value. This value is then passed to the `parseResponse` function, which extracts and outputs the message contained in the JSON.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how setTimeout is used to simulate a server response</th>
+          <td class="timeremaining cell c1 lastcol" style="">The setTimeout function is used to simulate a server response by introducing a delay before executing a specified function. In my example, setTimeout is used to delay the resolution of a promise by 5 seconds, mimicking the time it might take for a server to respond. This delay helps in testing the asynchronous behavior of the application by allowing developers to handle the delay in their code logic.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain why JSON methods are used by your project. stringify and parse</th>
+          <td class="timeremaining cell c1 lastcol" style="">The JSON methods used by my project are JSON.stringify() and JSON.parse(). JSON.stringify() is used to convert a JavaScript object into a JSON string. JSON.parse() is used to convert a JSON string into a JavaScript object. These methods are used to send and receive data in the form of JSON strings via the fetch API. The JSON.stringify() method is used to convert the data to be sent in the body of the request into a JSON string. The JSON.parse() method is used to convert the server response into a JavaScript object. The JSON methods are used in the project to send and receive data between the client and server.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how a function follows the handler naming convention.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The function handleSubmit follows the handler naming convention. This function is linked to the HTML form element via the onsubmit attribute. The function takes an event parameter and prevents the default form submission behavior. The function retrieves the form data, displays a message indicating that the information is being processed, and creates a new Promise that resolves with a server response. When the Promise resolves, it passes the response to the parseResponse function for further processing. </td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how your project uses the fetch function.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The fetch function is used to retrieve data from the server. The function takes in a URL and returns a Promise that resolves with the response from the server. The Promise is then passed to the parseResponse function for further processing. The fetch function is used on the "Contact Us" page to retrieve the server response after the user submits the form. </td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">What's the base URL? What are the key/value pairs? What does the fetch function return?</th>
+          <td class="timeremaining cell c1 lastcol" style="">The base URL is https://jsonplaceholder.typicode.com/todos/. The key/value pairs are: "userId": 1, "id": 1, "title": "delectus aut autem", "completed": false. The fetch function returns a Promise that resolves to a JSON object.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how the REST API response is extracted after using the fetch function.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The REST API response is extracted after using the fetch function by using the json() method. The json() method returns a promise that resolves to the JSON data from the response. The data is then extracted from the resolved promise using destructuring. For example, the response from the API can be extracted like this: const { data } = await response.json();</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">How is the fetch object accessed? How is the stringified object accessed?</th>
+          <td class="timeremaining cell c1 lastcol" style="">The fetch object is accessed by using the fetch function. The stringified object is accessed by using the JSON.stringify method.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how usable data is extracted from a REST API response.</th>
+          <td class="timeremaining cell c1 lastcol" style="">Usable data is extracted from a REST API response by first using the fetch function to retrieve the response. The response is then converted to JSON using the json() method. Once in JSON format, data is accessed using dot notation or destructuring to extract specific fields or values required by the application.</td>
+          <tr class="lastrow">
+          <th class="cell c0" style="" scope="row">Properly explain how data from a REST API is displayed by your project.</th>
+          <td class="timeremaining cell c1 lastcol" style="">The data from the REST API is displayed by using the fetch API to make a GET request to the API. The response is then parsed as JSON and the data is displayed on the page using the DOM. The data is displayed in a table with the columns: id, name, and price. The data is also displayed in a list with the items: id, name, and price. The data is displayed on the "Gallery" page.</td>
+          <tr class="lastrow">
+
+
+        </tr>
+        </tbody>
+          </table>
+          </div></div>
+  </main>
+  <footer class="pt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md- border border-3 border-info">
+          <p class="text-info text-center m-2"><i>"Paradise Parkers is the best place to park your car!"</i></p>
+          <p class="text-info text-center m-2"><i>"We had a great experience with Paradise Parkers!"</i></p>
+          <p class="text-info text-center m-2"><i>"I highly recommend Paradise Parkers to anyone looking for
+              parking!"</i></p>
+        </div>
+        <h4 class="text-secondary border-top border-black border-4 pt-2">Quick Links</h4>
+        <div class="list-group"><img height="250px" src="CapstonePictures\3.jpg">
+          <div><a href="index.html">Home</a></li>
+            <div><a href="about.html">About</a></li>
+              <div><a href="contact.html">Contact</a></li>
+              </div>
+            </div>
+
+            <p mt-3>&copy; rights reserved.</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

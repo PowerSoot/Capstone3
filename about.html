@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Paradise Parking</title>
+  <!-- Bootstrap stylesheet is linked from a CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- utility-functions.js is a utility script that contains functions that are used accross the app. The functions are: - createCardMarkupString:
+  takes an object with src, title, and description properties and returns a string containing the markup for a Bootstrap card.
+  - addCardsToMainTag: takes an array of objects and adds the markup string returned from createCardMarkupString to the mainTag's innerHTML. -->
+  <script src="utility-functions.js"></script>
+  <link href="sass.css" rel="stylesheet" />
+
+  <style>
+    body {
+      color: rgb(79, 198, 245);
+      background-image: linear-gradient(#b3b3b3, #8d0052a8);
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      font-size: 22px;
+    }
+    </style>
+
+</head>
+
+<body class="bg-light text-center">
+    <header aria aria-label="Header" class="pullUp body1">
+      <img width="100%" src="capstone2's\Images\header1_cr3.png">
+
+      <nav aria aria-label="Main navigation" class="navbar mixIt">
+        <a class="nav-link" href="index.html">Home Page</a>
+        <a class="nav-link active border border-5" href="about.html">About Our Services</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main id="mainTag">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-black">Service 1</div>
+          <div class="col-md-4 text-black">Service 2</div>
+          <div class="col-md-4 text-black">Service 3</div>
+        </div>
+      </div>
+      <br>
+      <script>
+        // loop through the array of objects and call the function to create the card markup string
+        // add the markup string to the mainTag's innerHTML
+        //const card12&3 are objects.
+        const card1 = {};
+        card1.src = "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/Large-Parking-Lot-Commercial-Paving.jpg?v=1726056561723";
+        card1.title = "We have the best spaces!";
+        card1.description = "Voted #1 in Parking Times Magazine.";
+
+        const card2 = {};
+        card2.src = "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/590ef44cf89729ee34ba27e3d990ec52.jpg?v=1726056515009";
+        card2.title = "Our customer service can't be beat!";
+        card2.description = "Community Choice Awards winner 3 years in a row!";
+
+        const card3 = {};
+        card3.src = "https://cdn.glitch.global/7b0247e2-bf85-4ecb-8f0f-a6d27beeacf2/b7918603271e3f85e81c1fb4cbcd8807.jpg?v=1726056526878";
+        card3.title = "Parking Place at the greatest parking place! ";
+        card3.description = "Paradise Parkers";
+
+        // create three objects with properties for image source, title, and description
+        const card1String = convertCard(card1);
+        const card2String = convertCard(card2);
+        const card3String = convertCard(card3);
+
+        // convert each card object into a string that represents an HTML card component
+        // use the convertCard() function to do this
+        // create an array of objects, each object represents a card with src, title, and description properties
+        const cards = [card1, card2, card3];
+        // loop through the array of objects and call the function to create the card markup string
+        // add the string to the mainTag's innerHTML
+        for (position = 0; position < cards.length; position++) {
+          const card = cards[position];
+          const cardString = convertCard(card);
+          mainTag.innerHTML = mainTag.innerHTML + cardString;
+        }
+      </script>
+    </main>
+    <footer>
+        <!-- <p>Semantic tags are used to describe the structure of a document or application. They are often used
+          to provide a better user experience and to make the content more accessible. Semantic
+            tags are supported by most modern browsers and are an important part of how search engines
+            like Google index web pages. Examples of semantic tags include
+            <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+            <code>&lt;footer&gt;</code>. Semantic tags do not affect the visual display of the content, but they do affect the way that search engines and screen readers interpret the content. -->
+
+        <h2>Rate this parking space!</h2>
+<form class="container text-center" style="margin-top: 20px;">
+  <div>
+    <input id="mad-face" type="radio" name="rating">
+    <label for="mad-face" style="font-size: 30px;">😡</label>
+  </div>
+  <div>
+    <input id="sad-face" type="radio" name="rating">
+    <label for="sad-face" style="font-size: 30px;">😟</label>
+  </div>
+  <div>
+    <input id="happy-face" type="radio" name="rating">
+    <label for="happy-face" style="font-size: 30px;">😊</label>
+  </div>
+  <div>
+    <input id="really-happy-face" type="radio" name="rating">
+    <label for="really-happy-face" style="font-size: 30px;">😁</label>
+  </div>
+</form>
+  
+    </footer>
+
+</body>
+
+</html>

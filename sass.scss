@@ -1,0 +1,225 @@
+$font: "Overmind";
+$font2: "Chavier";
+$color1: rgb(41, 76, 105);
+$color2:  rgb(114, 146, 250);
+$color3: rgba(116, 185, 176, 0.205);
+$textShadow: 2px 2px 2px rgb(58, 138, 175);
+$awesome: linear-gradient(to right, rgb(41, 76, 105), rgb(58, 138, 175), rgb(41, 76, 105));
+$font3: 'Rebolt';
+$font4: 'Buletproof';
+
+.bg-dark {
+  background-color: rgba(22, 51, 88, 0.596) !important;
+}
+// fonts go here  
+
+@font-face {
+  font-family: "Buletproof";
+  src: url("BulletproofDecoBb-r539.ttf");
+}
+@font-face {
+  font-family: "Chavier";
+  src: url("capstone2's/Images/Fonts/ChavlerExtruderightDemo-lxM9d.otf");
+}
+
+
+@font-face {
+    font-family: "Overmind";
+    src: url("capstone2's/Fonts/OvermindDemons-GO10y.ttf")
+}
+
+@font-face {
+  font-family: 'Rebolt';
+  src: url("capstone2's/Fonts/ReboltDemoRegular-8OeRD.otf");
+
+// mixins go here
+// a mixin is a group of CSS declarations
+// the ampersand (&) is used to target the parent, and then you can target the child elements with the space followed by the element name
+
+
+//propeties and values
+@mixin myFirst-mixin {
+    & a {
+        text-decoration: none !important;
+        color:rgb(200, 227, 243);
+        padding-right: 5%;
+        padding-left: 5%;
+        text-shadow: 2px 2px 2px black;
+        border-radius: 7px;
+    }
+    background-color: $color1;
+    border: 3px solid green;
+    text-decoration: none !important;
+    font-family: $font;
+    font-size: 20px;
+}
+
+@mixin mySecond-mixin {
+  font-family: $font2;
+  font-size: 37px;
+  text-align: center;
+  text-shadow: $textShadow;
+  color:rgb(41, 76, 105);
+  margin-top: 1%;
+}
+
+// these mixins are used to style the links and buttons
+// transform is a CSS property that is used to transform an element in 2D or 3D space. Hover over the links and buttons to see the effect 
+@mixin animation1 {
+  transform: scale(2) rotate(10deg);
+  transition: transform 2s;
+}
+
+//This is to give the rotation effect a smooth transition
+@mixin animation2 {
+  transform: scale(2) rotate(360deg);
+  transition: transform 3s;
+}
+
+.mixIt { 
+  @include myFirst-mixin;
+}
+
+
+.mixItTwo {
+  @include mySecond-mixin;
+}
+
+
+
+button {
+    @include myFirst-mixin;
+  &:hover {
+    color: red;
+  }
+}
+
+.active {
+    background-color: $color2;
+    //value
+}
+
+p {
+  text-shadow: 2px 3px 3px rgb(102, 146, 140);
+  padding-left: 8%;
+}
+
+table {
+  background-color: $color3;
+
+}
+
+#mixin-button {
+  @include animation1;
+
+}
+
+
+#mixin-button:hover {
+  @include animation2;
+}
+
+.windows {
+  background-image: linear-gradient($color3, $color3);
+  background-size: 8% 75%;
+  opacity: 85%;
+}
+
+
+.borderMy {
+  background-image: $awesome;
+}
+
+.font3 {
+  font-family: $font3;
+}
+
+.pieces {
+  background-image: linear-gradient($color3, $color3);
+  background-size: 8% 75%;
+}}
+
+
+h2 {
+  font-family: $font3;
+  padding: 7px 2px 2px 22px;
+  border: 4px solid rgba(33, 47, 61, 0.596);
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgba(13, 89, 189, 0.596), rgba(33, 47, 61, 0.596));
+  text-shadow: 2px 2px 222px rgb(179, 167, 202);
+  box-shadow: 3px 3px 3px rgb(40, 67, 80);
+}
+
+.card-text {
+  text-shadow: 2px 2px 2px rgb(40, 67, 80);
+}
+
+.btn-7 {
+  background: linear-gradient(0deg, rgb(99, 206, 233) 0%, rgb(172, 2, 251) 100%);
+    line-height: 42px;
+    padding: 110;
+    border: none;
+  }
+  .btn-7 span {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-7:before,
+  .btn-7:after {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(0, 5, 8);
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(248, 46, 46, 0.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: transform .28s;
+  }
+  .btn-7:before{
+    height: 10%;
+    width: 12px;
+  }
+  .btn-7:after {
+    width: 10%;
+    height: 12px;
+  }
+  .btn-7:hover{
+    color: rgba(251,75,2,1);
+    background: black;
+  }
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: fixed;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  // .btn-7 span:before {
+  //   width: 12px;
+  //   height: 0%;
+  // }
+  // .btn-7 span:after {
+  //   height: 12px;
+  //   width: 0%;
+  // }
+  // .btn-7 span:hover:before {
+  //   height: 100%;
+  // }
+  // .btn-7 span:hover:after {
+  //   width: 100%;
+  // }
